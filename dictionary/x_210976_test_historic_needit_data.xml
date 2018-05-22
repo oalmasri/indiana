@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Historic NeedIt Data" max_length="40" name="x_210976_test_historic_needit_data" type="collection">
+        <element attributes="import_attribute_name=Case Summary (Title),edge_encryption_enabled=true" label="Case Summary (Title)" max_length="40" name="u_case_summary__title_" type="string"/>
+        <element attributes="import_attribute_name=Department,edge_encryption_enabled=true" label="Department " max_length="40" name="u_department" type="string"/>
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=H,edge_encryption_enabled=true" label="H" max_length="40" name="u_h" type="string"/>
+        <element attributes="import_attribute_name=I,edge_encryption_enabled=true" label="I" max_length="53" name="u_i" type="string"/>
+        <element attributes="import_attribute_name=Priority,edge_encryption_enabled=true" label="Priority" max_length="40" name="u_priority" type="string"/>
+        <element attributes="import_attribute_name=Related Department,edge_encryption_enabled=true" label="Related Department" max_length="40" name="u_related_department" type="string"/>
+        <element attributes="import_attribute_name=Status,edge_encryption_enabled=true" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="import_attribute_name=Sub Related Department,edge_encryption_enabled=true" label="Sub Related Department " max_length="40" name="u_sub_related_department" type="string"/>
+    </element>
+</database>
