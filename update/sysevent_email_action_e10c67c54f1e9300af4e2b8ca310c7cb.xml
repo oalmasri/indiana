@@ -7,7 +7,7 @@
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
-        <collection>x_210976_test_needit</collection>
+        <collection>x_210976_test_needit_task</collection>
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
@@ -23,52 +23,57 @@
         <digest_template/>
         <digest_text/>
         <digestable>false</digestable>
-        <event_name>approval.cancelled</event_name>
+        <event_name>x_210976_test.overdueNeedItTask</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
         <from/>
-        <generation_type>engine</generation_type>
+        <generation_type>event</generation_type>
         <importance/>
         <include_attachments>false</include_attachments>
         <item>event.parm1</item>
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html/>
+        <message_html><![CDATA[<p><br />Dear&nbsp; ${assigned_to.first_name}</p>
+<p>An overdue Needit Task is assinged to you</p>
+<p>&nbsp;<strong>Please complete this task as soon as possible.</strong></p>
+<pre><br />${mail_script:CountOverdueNeedItTasksAssignedTo}</pre>
+<p>Number: ${number}</p>
+<p>&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name/>
+        <name>Overdue NeedIt Task</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields/>
-        <recipient_groups name="Database">287ee6fea9fe198100ada7950d0b1b73</recipient_groups>
+        <recipient_fields>assigned_to</recipient_fields>
+        <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject/>
+        <subject>Overdue NeedIt Task: ${number}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-05-16 16:49:14</sys_created_on>
+        <sys_created_on>2018-05-24 14:40:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ad9772aa4f069300af4e2b8ca310c763</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_id>e10c67c54f1e9300af4e2b8ca310c7cb</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Overdue NeedIt Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="needit" source="x_210976_test">a89643e94f061300af4e2b8ca310c786</sys_package>
         <sys_policy/>
         <sys_scope display_value="needit">a89643e94f061300af4e2b8ca310c786</sys_scope>
-        <sys_update_name>sysevent_email_action_ad9772aa4f069300af4e2b8ca310c763</sys_update_name>
+        <sys_update_name>sysevent_email_action_e10c67c54f1e9300af4e2b8ca310c7cb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-16 17:39:38</sys_updated_on>
+        <sys_updated_on>2018-05-25 04:20:38</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <template/>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
